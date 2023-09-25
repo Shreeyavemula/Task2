@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            width: 450px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .image {
+            margin-left: 150px;
+        }
+
+        .button {
+            width: 100%;
+            background-color: rgb(6, 173, 6);
+            color: white;
+            border: none;
+            height: 40px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .cancel {
+            background-color: red;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            width: 100px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+
+        .lb {
+            background-color: gainsboro;
+            width: 470px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .p {
+            color: black;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Add some styles for the icon */
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        /* Add a box to the icons with the username box */
+        .input-box {
+          display: flex;
+          align-items: center;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 0 10px;
+          margin-bottom: 10px;
+        }
+
+        .us {
+            width: 100%;
+            border: none;
+            height: 40px;
+        }
+
+        /* Adjust the alignment of Remember me and Forgot Password */
+        .checkbox-labels {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Center the "Sign up" link */
+        .signup-link {
+            text-align: center;
+            margin-top: -12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <p><i><span class="p">Instagram</span></i></p>
+            <div class="input-box">
+                <i class="icon fas fa-user"></i>
+                <input type="text" id="username" placeholder="Username" class="us">
+            </div>
+            <div class="input-box">
+                <i class="icon fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Password" class="us">
+            </div>
+            <button class="button">Login</button><br><br>
+            <div class="checkbox-labels">
+                <div>
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <label class="fgt"><a href="#">Forgot Password?</a></label>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <p class="signup-link">Don't have an account! <a href="#">Sign up here.</a></p>
+</body>
+</html>
